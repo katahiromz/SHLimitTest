@@ -8,7 +8,7 @@ static CDummyFolder *s_pFolder2 = NULL;
 
 BOOL OnInitDialog(HWND hwnd, HWND hwndFocus, LPARAM lParam)
 {
-    s_pFolder1 = new CDummyFolder(L"/:*?\"<>|", NULL);
+    s_pFolder1 = new CDummyFolder(L"\\/:*?\"<>|", NULL);
     s_pFolder2 = new CDummyFolder(NULL, L"ABCabc");
 
     HWND hEdt1 = GetDlgItem(hwnd, edt1);
